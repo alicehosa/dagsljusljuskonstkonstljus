@@ -2,8 +2,8 @@
 
 body {
 	padding: 1vw;
-	font-family: 'Palatino','Palatino Linotype','Palatino LT STD','Book Antiqua','Georgia,serif';
-	line-height: 1.25;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	line-height: 1,25;
 	font-size: 1vw;
   width: 100%;
 	}
@@ -12,11 +12,22 @@ h1, h2, h3, nav, footer {
     text-align: center;
 }
 
+h1 {
+    padding-bottom: 0%;
+    font-size: 3vw;
+}
+
+.container {
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
 nav {
     margin-bottom: 1vw;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    margin-top: 0vw;
     padding: 1vw;
+    padding-top: 0%;
+    font-family: monospace;
 }
 
 h2 {
@@ -29,6 +40,16 @@ h3 {
     
 }
 
+h4 {
+    text-align: left;
+    font-size: medium;
+    text-decoration: underline;
+}
+
+h5 {
+    font-size: medium;
+}
+
 #details {
     padding: 2vw;
     margin: 1vw;
@@ -38,7 +59,7 @@ h3 {
 footer {
     border-top: 1px solid black;
     padding-top: 1vw;
-    margin-top: 1vw;
+    margin-top: 4vw;
 }
 
 .copyright {
@@ -54,3 +75,31 @@ footer {
 		width: 1vw;
 		margin:.15vw;
 	}
+
+.head {margin-right: 10vw; 
+        text-align: right;
+    line-height: 0%;
+    font-size: 1,25vw;
+}    
+
+.F {
+    float: left;
+    margin-bottom: 15px;
+    font-family: 'Courier New', Courier, monospace;
+ 
+}
+
+.N {
+    float: right;
+    margin-bottom: 15px;
+    font-family: 'Courier New', Courier, monospace;
+ 
+}
+
+.bottomtext {
+    padding-top: 70%;
+}
+
+.container_photo {
+    float: center; 
+}

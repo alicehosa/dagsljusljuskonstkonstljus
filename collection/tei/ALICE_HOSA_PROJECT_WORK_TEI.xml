@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+ <?xml-model href="https://tei-c.org/release/xml/tei/custom/schema/xsd/tei_all.xsd" type="application/xml-dtd"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"> 
+
+    <teiHeader xml:lang="sv">
+        <fileDesc>    
+            <titleStmt>
+                <title>En digitaliserad version av "Dagsljus, ljuskonst, konstljus"</title>
+                <author>Birgitta Olsson, 1985</author>
+                <principal>Alice Hosa</principal>
+                <respStmt>
+                   <resp>Sammanställt och digitaliserat av</resp>
+                   <name>Alice Hosa</name>
+                </respStmt>
+        </titleStmt>      
+        <publicationStmt>
+        <authority>Alice Hosa</authority>
+        <date when="2022">2022-</date>
+            <pubPlace>Göteborg</pubPlace>
+            <availability status="free">  
+                <p>Tillåtelse att publiceras fritt har givits av författaren.</p>    
+               </availability>
+        </publicationStmt>
+        <sourceDesc>
+            <msDesc>
+                <msIdentifier>
+                    <settlement>Göteborg</settlement>
+                </msIdentifier>
+                <msContents>
+                    <msItem>
+                        <author>
+                            <name>Birgitta Olsson</name>
+                        </author>
+                        <title>Dagsljus, ljuskonst, konstljus</title>
+                        <textLang mainLang="SV">Svenska</textLang>
+                    </msItem>
+                </msContents>
+                <physDesc>
+                    <objectDesc form="book">
+                        <supportDesc material="paper">
+                        <extent>85<dimensions scope="all" type="pages"
+                            unit="cm">
+                            <height>7¼</height>
+                            <width>5⅜</width>
+                           </dimensions>
+                          </extent>
+                        </supportDesc>
+                    </objectDesc>
+                    <handDesc>
+                        <p>Skriven för hand av en person.</p>
+                    </handDesc>
+                </physDesc>
+            </msDesc>        
+        </sourceDesc>    
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p> I det här projektet har jag digitaliserat ett examensarbete 
+                    i arkitektur inom ramarna för kursen Digitalisering av kulturarvsmaterial vid Borås högskola, VT 2022. 
+                Syftet har varit att tillgängliggöra ett material som dels är en aning unikt, men samtidigt tidstypiskt. Det unika består i den speciella 
+                handskrift i vilken hela arbetet är skriven (ett hantverk som håller på att försvinna), och det tidstypiska består i bokens utformning 
+                som var till viss del typisk för 
+                examensarbeten vid Chalmers tekniska högskola vid den här tiden. </p>
+            </projectDesc>
+            <editorialDecl>
+             <p></p>
+            </editorialDecl>
+         <styleDefDecl scheme="css"
+ schemeVersion="2.1"/>
+        <tagsDecl>
+            <rendition xml:id="italic">font-style: italic</rendition>
+            <rendition xml:id="center">text-align: center</rendition>
+            <rendition xml:id="expanded">letter-spacing: +3pt;</rendition>
+        </tagsDecl>
+            
+         <samplingDecl>
+             <p>
+                 Urvalet är gjort för att visa upp olika aspekter av examensarbtet och består av ett urval sidor 
+                 som visar dess materiella och hantverksmässiga egenskaper liksom de mer teoretiska.
+             </p>
+         </samplingDecl>
+         </encodingDesc>
+    </teiHeader>
+
+    <standOff>
+        <listPerson>
+            <person xml:id="JA">
+                <persName>Joseph Albers</persName>
+                <persName>Josef Albers</persName>   
+                 <birth when="1888-03-19">1888</birth>
+                 <death when="1976-03-25">1976</death>
+                 <occupation>[tysk] konstnär</occupation> 
+                </person>
+                <person xml:id="RA">
+                    <persName>Roberto Aloi</persName>  
+                     <occupation>Konstnär och skulptör</occupation> 
+                    </person>
+            <person xml:id="IB">
+                <persName>Inger Bergström</persName>
+            </person>
+            <person xml:id="AB">
+             <persName>Armand Björkman</persName>
+             <birth when="1932-12-03">1932</birth>
+             <occupation>Arkitekt</occupation>
+         </person>
+         <person xml:id="JB">
+             <persName>Jørgen Bo</persName>
+             <birth when="1919-04-08">1919</birth>
+             <death when="1999">1999</death>
+             <occupation>Arkitekt</occupation>
+         </person>
+         <person xml:id="EB">
+             <persName>Else Bülow</persName>
+         </person>
+         <person xml:id="BHE">
+            <persName>Evans BH</persName> 
+            <persName>Benjamin H. Evans</persName>
+            </person>
+         <person xml:id="POF">
+            <persName>Per Olaf Fjeld</persName> 
+            <persName>Per-Olaf Fjeld</persName>  
+             <birth when="1945-12-27">1945</birth>
+             <occupation>Arkitekt och professor</occupation> 
+            </person>
+            <person xml:id="SH">
+                <persName>Sven Hesselgren</persName> 
+                 <birth when="1907-03-02">1907</birth>
+                 <death when="1993-04-29">1993</death>
+                 <occupation>Arkitekt och docent</occupation> 
+                </person>
+                <person xml:id="HRH">
+                    <persName>Hitchcock HR</persName>
+                    <persName>Henry-Russell Hitchcock</persName> 
+                     <birth when="1903-06-03">1903</birth>
+                     <death when="1987-02-19">1987</death>
+                     <occupation>Arkitekturhistoriker</occupation> 
+                    </person>
+                    <person xml:id="SJ">
+                        <persName>Sten Jørgensen</persName>   
+                        </person>
+                    <person xml:id="LK">
+                        <persName>Louis Kahn</persName>
+                        <persName>Louis Isadore Kahn</persName> 
+                         <birth when="1901-02-20">1901</birth>
+                         <death when="1974-03-17">1974</death>
+                         <occupation>Arkitekt</occupation> 
+                        </person>
+                        <person xml:id="WMCL">
+                            <persName>William M. C. Lam</persName>
+                            <persName>Lam William MC</persName> 
+                             <birth when="1924">1924</birth>
+                             <death when="2012">2012</death>
+                             <occupation>Arkitekt och designer</occupation> 
+                            </person>
+                            <person xml:id="EL">
+                                <persName>Erik Lundberg</persName>   
+                                 <birth when="1895-02-01">1895</birth>
+                                 <death when="1969-05-09">1969</death>
+                                 <occupation>Arkitekt och konsthistoriker</occupation> 
+                                </person>
+         <person xml:id="KGN">
+            <persName>K. G. Nilssom</persName> 
+            <persName>Karl Gustaf Nilsson</persName>  
+             <birth when="1942-01-23">1942</birth>
+             <occupation>Målare och grafiker</occupation> 
+            </person>
+            <person xml:id="CNS">
+                <persName>Christian Norberg-Schulz</persName>   
+                 <birth when="1926-03-23">1926</birth>
+                 <death when="2000-03-28">2000</death>
+                 <occupation>Arkitekt</occupation> 
+                </person>
+                <person xml:id="RS">
+                    <persName>Robert Short</persName>   
+                    </person>
+                    <person xml:id="CS">
+                        <persName>Carlo Scarpa</persName>   
+                         <birth when="1906-06-02">1906</birth>
+                         <death when="1978-11-28">1978</death>
+                         <occupation>Arkitekt</occupation> 
+                        </person>
+                        <person xml:id="JS">
+                            <persName>James Sterling</persName>   
+                             <birth when="1926-04-22">1926</birth>
+                             <death when="1992-06-25">1978</death>
+                             <occupation>Arkitekt</occupation> 
+                            </person>
+                        <person xml:id="ET">
+                            <persName>Esaias Tegnér</persName>
+                            <birth when="1782-11-13">1782</birth>
+                            <death when="1846-11-02">1846</death>
+                            <occupation>Poet, skald</occupation>
+                        </person>
+                            <person xml:id="VW">
+                                <persName>Vilhelm Wohlert</persName>
+                                <birth when="1920-05-27">1920</birth>
+                                <death when="2007-05-10">2007</death>
+                                <occupation>Arkitekt</occupation>
+                            </person>
+                    <person xml:id="MV">
+                        <persName>Mogens Voltelen</persName>   
+                         <birth when="1908-05-16">1908</birth>
+                         <death when="1995-03-12">1995</death>
+                         <occupation>Designer</occupation> 
+                        </person>
+        </listPerson>
+
+    <listPlace>
+        <place xml:id="B" type="province">
+            <placeName>Bohuslän</placeName>
+            <location>
+                <country key="SV"/>
+            </location>   
+            </place>
+        <place xml:id="BM" type="museum">
+            <placeName>Bohusläns Museum</placeName>
+            <location>
+             <country key="SV"/>
+             <settlement type="city">Uddevalla</settlement>
+             <placeName type="street">
+              <num>1</num>Museigatan</placeName>
+            </location>
+           </place>
+           <place xml:id="BS" type="settlement">
+            <placeName>Bovalsstrand</placeName>
+            <location>
+                <country key="SV"/>
+                <region>Bohuslän</region>
+            </location>
+        </place>
+        <place xml:id="BF" type="river">
+            <placeName>Bottnafjorden</placeName>
+            <location>
+                <country key="SV"/>
+            </location>
+        </place>
+        <place xml:id="DMD" type="museum">
+            <placeName>Design Museum Danmark</placeName>
+            <placeName>Kunstindustri museét</placeName>
+            <location>
+             <country key="DK"/>
+             <settlement type="city">Copenhagen</settlement>
+             <placeName type="street">
+              <num>68</num>Bredgade</placeName>
+            </location>
+           </place>
+           <place xml:id="DFU" type="museum">
+            <placeName>Den Frie Udstilling</placeName>
+            <placeName>Den Frie</placeName>
+            <location>
+             <country key="DK"/>
+             <settlement type="city">Köpenhamn</settlement>
+             <placeName type="street">
+              <num>1</num>Oslo Pl.</placeName>
+            </location> 
+        </place>
+        <place xml:id="G" type="settlement">
+            <placeName>Gerlesborg</placeName>
+            <location>
+                <country key="SV"/>
+            </location>
+        </place>
+            <place xml:id="DHS" type="museum">
+                <placeName>Den Hirschsprungske Samling</placeName>
+                <location>
+                 <country key="DK"/>
+                 <settlement type="city">Köpenhamn</settlement>
+                 <placeName type="street">
+                  <num>20</num>Stockholmsgade</placeName>
+                </location> 
+            </place>
+           <place xml:id="HOC" type="museum">
+            <placeName>Henie Onstad Kunstsenter</placeName>
+            <location>
+             <country key="NO"/>
+             <settlement type="city">Høvikodden</settlement>
+             <placeName type="street">
+              <num>31</num>Sonja Henies v.</placeName>
+            </location>
+           </place>  
+           <place xml:id="HM" type="museum">
+            <placeName>Holstebro museum</placeName>
+            <location>
+             <country key="DK"/>
+             <settlement type="city">Holstebro</settlement>
+             <placeName type="street">
+              <num>2B</num>Museumsvej</placeName>
+            </location>
+           </place>  
+           <place xml:id="KH" type="museum">
+            <placeName>Kunsternernes Hus</placeName>
+            <location>
+             <country key="NO"/>
+             <settlement type="city">Oslo</settlement>
+             <placeName type="street">
+              <num>17</num>Wergelandsveien</placeName>
+            </location>
+           </place>  
+           <place xml:id="KC" type="museum">
+            <placeName>Kunsthal Charlottenborg</placeName>
+            <location>
+             <country key="DK"/>
+             <settlement type="city">Köpenhamn</settlement>
+             <placeName type="street">
+              <num>1</num>Kongens Nytorv</placeName>
+            </location> 
+            </place>
+           <place xml:id="KIM" type="museum">
+            <placeName>Kunstindustrimuseet</placeName>
+            <location>
+             <country key="NO"/>
+             <settlement type="city">Oslo</settlement>
+             <placeName type="street">
+              <num>1</num>St. Olavs Gate</placeName>
+            </location>
+           </place> 
+        <place xml:id="LMoMA" type="museum">
+                <placeName>Louisiana Museum of Modern Art</placeName>
+                <location>
+                 <country key="DK"/>
+                 <settlement type="city">Humlebaek</settlement>
+                 <placeName type="street">
+                  <num>13</num>Gamle Strandvej</placeName>
+                </location>
+               </place>
+               <place xml:id="LKH" type="museum">
+                <placeName>Lunds konsthall</placeName>
+                <location>
+                 <country key="SV"/>
+                 <settlement type="city">Lund</settlement>
+                 <placeName type="street">
+                  <num>3</num>Mårtenstorget</placeName>
+                </location>
+               </place>
+               <place xml:id="MK" type="museum">
+                <placeName>Malmö konsthall</placeName>
+                <location>
+                 <country key="SV"/>
+                 <settlement type="city">Malmö</settlement>
+                 <placeName type="street">
+                  <num>7</num>St: Johannesgatan</placeName>
+                </location>
+               </place>
+               <place xml:id="MM" type="museum">
+                <placeName>Moderna museet</placeName>
+                <location>
+                 <country key="SV"/>
+                 <settlement type="city">Stockholm</settlement>
+                 <placeName type="street">
+                  <num>4</num>Exercisplan</placeName>
+                </location>
+               </place>
+               <place xml:id="MMO" type="museum">
+                <placeName>Munchmuseet</placeName>
+                <location>
+                 <country key="NO"/>
+                 <settlement type="city">Oslo</settlement>
+                 <placeName type="street">
+                  <num>1</num>Edvard Munchs Plass</placeName>
+                </location>
+               </place>
+               <place xml:id="MC" type="museum">
+                <placeName>Museo di Castelvecchio</placeName>
+                <placeName>Castelvecchio Verona</placeName>
+                <location>
+                 <country key="IT"/>
+                 <settlement type="city">Verona</settlement>
+                 <placeName type="street">
+                  <num>2</num>corso Castelvecchio</placeName>
+                </location>
+               </place>
+               <place xml:id="NG" type="museum">
+                <placeName>Nasjonalgalleriet</placeName>
+                <location>
+                 <country key="NO"/>
+                 <settlement type="city">Oslo</settlement>
+                 <placeName type="street">
+                  <num>13</num>Universitetsgata</placeName>
+                </location>
+               </place>
+               <place xml:id="RM" type="museum">
+                <placeName>Rijksmuseum</placeName>
+                <location>
+                 <country key="AM"/>
+                 <settlement type="city">Amsterdam</settlement>
+                 <placeName type="street">
+                  <num>1</num>Museumstraat</placeName>
+                </location>
+               </place>
+               <place xml:id="SMK" type="museum">
+                <placeName>Statens Museum for Kunst</placeName>
+                <placeName>SMK</placeName>
+                <location>
+                 <country key="DK"/>
+                 <settlement type="city">Köpenhamn</settlement>
+                 <placeName type="street">
+                  <num>48-50</num>Sølvgade</placeName>
+                </location>
+               </place>
+               <place xml:id="NSS" type="museum">
+                <placeName>Neue Staatgallerie Stuttgart</placeName>
+                <placeName>Staatgallerie Stuttgart</placeName>
+                <placeName>Staatgallerie</placeName>
+                <location>
+                 <country key="DE"/>
+                 <settlement type="city">Stuttgart</settlement>
+                 <placeName type="street">
+                  <num>40-32</num>Konrad-Adenauer-Str.</placeName>
+                </location>
+               </place>
+               <place xml:id="NCG" type="museum">
+                <placeName>Ny Carlsberg Glyptotek</placeName>
+                <location>
+                 <country key="DK"/>
+                 <settlement type="city">Copenhagen</settlement>
+                 <placeName type="street">
+                  <num>7</num>Dantes Plads</placeName>
+                </location>
+               </place> 
+               <place xml:id="SM" type="museum">
+                <placeName>Stedelijk Museum</placeName>
+                <location>
+                 <country key="AM"/>
+                 <settlement type="city">Amsterdam</settlement>
+                 <placeName type="street">
+                  <num>10</num>Museumplein</placeName>
+                </location>
+               </place>
+               <place xml:id="TM" type="museum">
+                <placeName>Thorvaldsens museum</placeName>
+                <location>
+                 <country key="DK"/>
+                 <settlement type="city">Köpenhamn</settlement>
+                 <placeName type="street">
+                  <num>2</num>Bertel Thorvaldsens Plads</placeName>
+                </location>
+               </place>
+               <place xml:id="VGM" type="museum">
+                <placeName>Van Gogh Museum</placeName>
+                <location>
+                 <country key="AM"/>
+                 <settlement type="city">Amsterdam</settlement>
+                 <placeName type="street">
+                  <num>6</num>Museumplein</placeName>
+                </location>
+               </place>
+               <place xml:id="VM" type="museum">
+                <placeName>Vigelandsmuseet</placeName>
+                <location>
+                 <country key="NO"/>
+                 <settlement type="city">Oslo</settlement>
+                 <placeName type="street">
+                  <num>32</num>Nobels gate</placeName>
+                </location>
+               </place>
+       </listPlace>
+    </standOff>
+    <facsimile>
+        
+                <graphic xml:id="FRAMSIDA" url="assets/img/documents/FRAMSIDA.png"></graphic>
+         <graphic xml:id="SIDA_05" url="assets/img/documents/SIDA_05.png"></graphic>
+                <graphic xml:id="SIDA_07" url="assets/img/documents/SIDA_07.png"></graphic>
+                <graphic xml:id="SIDA_08" url="assets/img/documents/SIDA_08.png"></graphic>
+                <graphic xml:id="SIDA_09" url="assets/img/documents/SIDA_09.png"></graphic>
+                <graphic xml:id="SIDA_10" url="assets/img/documents/SIDA_10.png"></graphic>
+                <graphic xml:id="SIDA_11" url="assets/img/documents/SIDA_11.png"></graphic>
+                <graphic xml:id="SIDA_12" url="assets/img/documents/SIDA_12.png"></graphic>
+        <graphic xml:id="SIDA_13" url="assets/img/documents/SIDA_13.png"></graphic>
+        <graphic xml:id="SIDA_34" url="assets/img/documents/SIDA_34.png"></graphic>
+        <graphic xml:id="SIDA_35" url="assets/img/documents/SIDA_35.png"></graphic>
+        <graphic xml:id="SIDA_39" url="assets/img/documents/SIDA_39.png"></graphic>
+        <graphic xml:id="SIDA_50" url="assets/img/documents/SIDA_50.png"></graphic>
+        <graphic xml:id="SIDA_51" url="assets/img/documents/SIDA_51.png"></graphic>
+        <graphic xml:id="SIDA_52" url="assets/img/documents/SIDA_52.png"></graphic>
+        <graphic xml:id="SIDA_53" url="assets/img/documents/SIDA_53.png"></graphic>
+        <graphic xml:id="SIDA_56" url="assets/img/documents/SIDA_56.png"></graphic>
+        <graphic xml:id="SIDA_57" url="assets/img/documents/SIDA_57.png"></graphic>
+        <graphic xml:id="SIDA_68" url="assets/img/documents/SIDA_68.png"></graphic>
+        <graphic xml:id="SIDA_69" url="assets/img/documents/SIDA_69.png"></graphic>
+        <graphic xml:id="SIDA_84" url="assets/img/documents/SIDA_84.png"></graphic>
+        <graphic xml:id="BAKSIDA" url="assets/img/documents/BAKSIDA.png"></graphic>
+    
+    </facsimile>
+
+
+
+<text xml:lang="sv" type="prose">
+        <body> 
+            
+            <pb facs="#FRAMSIDA"/>
+           
+                <head rendition="#right">DAGSLJUS</head>
+                <head rendition="#right">LJUSKONST</head>
+                <head rendition="#right">KONSTLJUS</head>
+
+            <p rendition="#left" ><l>EXAMENSARBETE  I ARKITEKTUR</l>
+            <l>FORMLÄRA CTH 1985 BIRGITTA OLSSON</l></p>
+
+          
+
+             
+        <pb facs="#SIDA_05"/>  
+         
+        <head rendition="#left"> INLEDNING </head>
+              <p> Mitt intressen för konst - konstmuséer - arkitektur blev efterhand mer och
+                   mer koncentrerat kring rumsupplevelsen och på det sätt som ljuset och skuggan 
+                   avgör en känsla i rummet – färger, proportioner, material, struktur, lugn, oro –  </p>
+
+              <p>Examinator <persName ref="#AB">Armand Björkman</persName> och handledare <persName ref="#IB">Inger Bergström</persName> har varit mycket 
+                inspirerande och hjälpt mig under arbetets gång. Samtal med <persName ref="#AL">Anders Liljefors</persName>, 
+               <persName ref="#EC">Ebbe Christiansen</persName> och <persName ref="#KN">Kurt Nørregaard</persName>gav stärkande funderingar. </p> 
+                
+              <p>Det märkliga är att belysningslära inte är obligatorisk i vår arkitekturutbildning
+                   – ljuset gör ju allt!</p> 
+                   
+               <p>Göteborg 	Juli	 1985</p>    
+               <p rendition="#right">5</p>
+         
+                <pb facs="#SIDA_07"/>
+                
+                    <head type="main" rendition="#left">
+                       INNEHÅLLSFÖRTECKNING</head>
+                   <list type="index">
+                       <item >Inledning <ref>5</ref></item>
+                       <item>Tankar om ljus<ref>8</ref></item>
+                       <item>Några nya muséer – Det teoretiska ljuset<lb/> 
+                           – Vad gör man istället<ref>11</ref></item>
+                       <item>Några undersökningar om ljus<ref>17</ref></item>
+                       <item>Dagsljus och konstljus<ref>20</ref></item>
+                       <item>Vad är det bästa och det 'mesta' ljuset?<ref>21</ref></item>
+                       <item>Intryck av färger från studiebesök i skulpturhallar<ref>23</ref></item>
+                       <item>Sammanfattning av kapitlet 'Malerier i elektrisk belysning' av <name ref="EB">Else Bülow</name> och <name ref="SJ">Sten Jørgensen</name><ref>26</ref></item>
+                       <item><quote>"...ingen muséer rummer hvad somhelst det gør kun udstillningshaller"</quote><ref>30</ref></item>
+                       <item>Uställningshall i <placeName ref="G">Gerlesborg</placeName><ref>34</ref></item>
+                       <item>Mitt arbetssätt<ref>35</ref></item>
+                       <item>Karta<ref>39</ref></item>
+                       <item>Volymer och riktningar i landskapet<ref>40</ref></item>
+                       <item>Modellstudier<ref>44</ref></item>
+                       <item>Platsen<ref>50</ref></item>
+                       <item>Mitt förslag<ref>54</ref></item>
+                       <item> Skisser och anteckningar från studier o studiebesök </item>
+                       <item><placeName ref="DFU">Frie Udstillning</placeName>Köpenhamn<ref>63</ref></item>
+                       <item><placeName ref="KH">Kunstnernes Hus</placeName>, Oslo<ref>65</ref></item>
+                       <item><placeName ref="MMO"> Munchmuséet</placeName>Oslo<ref>66</ref></item>
+                       <item><placeName ref="LKH">Lund Konsthall</placeName> <ref>68</ref></item>
+                       <item><placeName ref="MK">Malmö Konsthall</placeName><ref>70</ref></item>
+                       <item><placeName ref="HM">Holstebro Museum</placeName><ref>72</ref></item>
+                       <item><placeName ref="NSS">Die Neue Stadtgallerie</placeName>Stuttgart<ref>73</ref></item>
+                       <item><placeName ref="MC"></placeName> Castelvecchio Verona<ref>74</ref></item>
+                       <item>'några fler exempel'<ref>77</ref></item>
+                       <item>Muséer och utställningshallar
+                           <lb/>– studiebesök under mitt examensarbete<ref>80</ref></item>
+                       <item>Litteraturförteckning<ref>82</ref></item>
+     
+                   </list>
+                        <p rendition="#right">7</p>
+             
+                
+               
+               
+                    <pb facs="#SIDA_08"/>
+                  <head type="main" rendition="#center">Tankar om ljus – dagsljus</head>
+                
+                    <cit><quote>”En bit kol kan en solig dag faktiskt vara ljusare än en bit krita en mulen dag, 
+                        men det skulle aldrig falla oss in att uppfatta det så. Och det är tur, för om vi
+                         inte hade denna förmåga att anpassa oss efter belysningens variation skulle det 
+                         inte vara möjligt att uppleva att föremålen har sina bestämda färger.”
+                        </quote></cit>
+
+                        <bibl>Citat av <name ref="#KGN">KG Nilsson</name>, <name ref="#KGN">KG Nilsson</name>s <title>Färglära</title></bibl>
+                        <p rendition="#left">8</p>
+                
+                       
+            
+                    <pb facs="#SIDA_09"/>
+                  <p> Men vi har inte förmågan att anpasa oss hur mycket som helst.
+                       När vi blir bländade av ljuset kan vi inte uppfatta omgivningens färger. 
+                       Naturligtvis kan man se mer av färgerna efter ett tag om man håller kvar 
+                       blicken men det dröjer längre innan ögat överhuvudtaget kan ge oss chansen 
+                       att verkligen se föremålens form och färg.</p> 
+            
+                       <cit><quote>”Ljuset förutsätter närvaron av sin motsats mörkret, som är frånvaron av ljus. 
+                       Mellan dessa båda utvecklas ett spel av belysta ytor och skuggor av olika slag
+                        som det är fascinerande att ge akt på.  Ljuset modellerar fram föremålen, det
+                         gör dem synliga. Men skuggan är hela tiden också där, som en lika nödvändig 
+                         förutsättning. När ljuset avtar, tilltar skuggan.”</quote></cit>
+                         <p rendition="#right">9</p>
+                
+                <p> <pb n="3"/> </p>
+      
+
+             
+                <pb facs="#SIDA_10"/>
+                 <p>Det är just när man bara är i ett rum utan att speciellt tänka på varken golv 
+                     tak eller väggar, som rumsupplevelsen är ’total’ då inget är dominerande, 
+                     splittrande eller bländande. </p>
+
+                 <p>här ska det vara tre staplar eller tabeller med text. Hur märker jag upp det?</p>    
+
+                 <p rendition="center"><l>– det kan vara</l> 
+                    <l>rena själavården!</l></p>
+
+                    <p rendition="#left">10</p>
+                    
+                 <pb n="4"/>
+               
+
+
+                    <pb facs="#SIDA_11"/>
+                    <head>Några nya muséer </head>
+                    <p>Många nya muséer har väl genomarbetade ljusförhållande – där alla ljuskällor i
+                         det närmaste är optimalt arrangerade och anpassade till olika utställningars krav 
+                         på belysning! Teoretiskt! Några exempel är <placeName ref="#LMOMA">Louisiana</placeName>s senaste tillbyggnad och 
+                         <placeName>Bochummuséet BRD</placeName> – båda ritade av de duktiga danska arkitekternas <persName ref="#JB">Jørgen Bo</persName> och
+                         <persName ref="#VW">Vilhelm Wohlert.</persName></p>
+
+                    <p>Men trots allt, finns det kritiska röster som nästan tillintetgör den ’optimala belysningen’. 
+                        <persName  ref="#EB">Else Bülow</persName> som är museichef på Nordjyllands Konstmuseum i Ålborg nser att <quote>”På 
+                        Museum Bochum i Tyskland er lyset jo teoretisk set helt korrekt bløtt og jævnt dosert 
+                        – men så kedeligt, at der ingen mensker kommer.”</quote></p>  
+                        
+                    <p>Det viktigaste är alltså inte enbart en belysning som ger optimal färgåtergicning utan
+                         att ljuset ger en god rumsupplevelse – att man trivs och känner sig rofylld och hänförd. 
+                         Rummet får inte bli som ett perfekt belyst akvarium där konstverket inte upplevs, utan 
+                         bara hänger som i ett konservat där ljuskällan har ett elakt uträknat lutvärde.</p>   
+                         <p rendition="#right">11</p>
+                         
+                  
+                     
+                    
+                        <pb facs="#SIDA_12"/>
+                    <cit xml:lang="da"><quote>”Men hvad hjælper det at kunstværkene lever længe hvis de ikke opleves? … Er arkitekturen 
+                        og rumsbelysningen god så er grundlaget for en god kunstoplevelse til stede. Og jeg synes, 
+                        der skal være variation. Lyset og synoplevelse skal veksle…så var jeg på James Sterlings nye 
+                        Stuttgart Museum. Det var spring i lyset og måske også nogle fejl – men det var langt mere
+                         spændende at være, folk stod i kø for at komme til.”</quote></cit>
+
+                    <p>Efter mitt eget besök på <persName ref="#JS">James Sterling</persName>s <placeName ref="#NS">Stadtsgallerie</placeName> i Stuttgart ställer jag mig frågande
+                         till de positiva synpunkterna om ljuset. Vid entré och de rum som låg kopplade till 
+                         rotundrand var det ett fint samspel mellan öppningar, fönster och volymer – men 
+                         utställningshallarna var det till största del relativt intetsägande ljusintag. Däremot var det
+                         fantastiskt fint i några accenterade rum.</p>     
+
+                    <bibl>”Citat av <persName ref="#EB">Else Bülow</persName> <title xml:lang="da">LP-NYT</title> nr. 488</bibl>     
+                    <p rendition="#left">12</p>
+               
+
+                
+                    <pb facs="#SIDA_13"/>
+                
+                    <head>DET TEORETISKA BERÄKNADE LJUSET </head> 
+                    <p>Det teoretiskt bästa ljuset blir ofta trist, ljusstrålarna når ut i varenda liten krok,
+                         ingen skuggverkan och situationen blir ”diffus”. Man ser inte vad som är matt eller blankt, 
+                         olika strukturer och material ges ingen rättvisa och blir svåra att se.</p>
+
+                    <p>Jämför ett vackert norrljusbelyst tak med ett diffust undertag som i sig självt lyser, 
+                         belyser vattnigt och disigt, som i värsta fall dessutom ger ett rutigt, randigt eller på 
+                         annat sätt oroligt synintryck genom att balkar eller mellanpartier skuggar. Naturligtvis 
+                         finns det ett och annat undantag – på <placeName ref="#SM">Stedelijk Museum</placeName> i Amsterdam har man spänt ett tunt, 
+                         vackert tyg i den övre trapphallen – som silar in dagsljus från den ovanpåliggande tak ….</p> 
+                         <p rendition="#right">13</p>   
+               
+
+
+                   
+                        <pb facs="#SIDA_34"/>
+                       
+                        <head>Utställningshall i <placeName ref="#G">Gerlesborg</placeName></head>
+                    <p> I mina studier har jag tänkt mig en byggnad på en plats nära <placeName ref="#G">Gerlesborg</placeName> i <placeName ref="#B">Bohuslän</placeName> . Där är
+                         landskapet starkt med sina branta berg och stup mot flacka dalgångar och vattnet. Här blir landskapets 
+                         färgåtergivning väldigt dominerande. Därför är det viktigt att ljuset slussas in på ett mjukt och 
+                         harmoniskt sätt. Att rummets alla ytor ger en behaglig färg- och ljusåterspegling, att golvet inte är för 
+                         mörkt, hårt kontrasterande eller totalt ljus-absorberande.</p> 
+
+                   <p>  Det är inte enbart ytornas färg som avgöra utan även materialets ytstruktur – matt eller blankt, 
+                            slätt eller ojämnt, ojämnhet ger skuggeffekt ⟶ mörkare yta ⟶ mörkare färg. 
+                        </p>
+                        <p rendition="#left">34</p>
+                   
+
+                  
+                        <pb facs="#SIDA_35"/>
+                        <head>Mitt arbetssätt</head>
+                        <p>
+                            I mitt arbete har jag sökt olika sätt att modellera ljusets väg – att på ett enkelt sätt leda ljuset
+                             i ett rum så att den totala upplevelsen av rummet blir harmonisk och ändamålsenlig. Detta problem är ju 
+                             lika viktigt oavsett typ av rum. Det primära är att, som Anders Lijlefors så enkelt uttryckte
+                              det; ”ljuset stöder blicken”.</p>
+                            
+                           <p> Jag har gjort flera studiebesök och sökt lösningar i böcker och tidsskrifter. I många fall har jag 
+                            sett de mest fantastiska överljuskonstruktioner men <quote>”det enkla är det sköna värt”</quote> enligt 
+                            <persName ref="#ET">Esaias Tengér</persName>.
+                             De mer komplicerade lösningarna ger ofta ett dominerande intryck eller kan rent utav vara starkt kontrasterande 
+                             och splittrande i rummet. </p>
+                            
+                            <p>Under mina studiebesök har jag först o främst försökt förstå helhetsupplevelsen av en utställninghall. 
+                            Exempelvis, varför ser jag <placeName ref="#MMS">Moderna Muséet</placeName>s stora nya hall som en vitmålad bunker med ett rörigt tak och 
+                            splittrande armatur? </p>
+                        
+                       
+                        <p rendition="#right">35</p>
+                 
+                   
+
+                  
+                        <pb facs="#SIDA_39"/>
+                            
+                        <p rendition="#right">39</p>
+                       
+
+               
+                    <pb facs="#SIDA_50"/>
+                   
+                <head>Platsen</head>
+                    
+                <p>Platsen ligger strax ovanför inägans hörn bakom en gammal gärdsgård som avgränsar dalgång från strandmark i en 
+                    bestämd nästan rät vinkel
+                </p>  
+
+                
+
+                        <p>Marken har legat i träda några år och utnyttjas bara till bete. På ena sidan reser sig 
+                            ett brant berg medan det bara stiger några ... mot den andra. Det väldiga berget står markant 
+                            och resligt i landskapet. </p>
+
+                            <p> Där landsvägen gör en böj mot dalgångens andra kant tar man av och går över åkern längsutmed en bäck 
+                                som delar sig mitt i dalsvackan. Vid det branta bergets fot växer sly och småbjörkar – ett bra gömställe för 
+                                utsatta djur.
+                        </p>
+ 
+                     <p rendition="#right">50</p>
+                
+
+                
+                    <pb facs="#SIDA_51"/>
+
+                    <p>För att nå platsen går man på en gammal gräsbevuxen väg som löper utmed berget. På ena sidan av vägen syns
+                        en fåra och på den andra en stengärdsgård som avbryts med två stenar som bildar port på krönet. Här är som en smal 
+                        platå där en byggnad kan ge platsen en skräpt rumsbildning. 
+                    </p>  
+ 
+                        <p>Här ifrån ser man <placeName ref="#BF">Bottnafjorden</placeName>s inre del och bitar av bebyggelsen i <placeName ref="#BS">Bovallstrand</placeName>. Marken sluttar ner 
+                            mot strandkanten.
+                        </p>
+                 
+                     <p rendition="#right">51</p>
+            
+
+             
+                    <pb facs="#SIDA_52"/>
+                    <p>Från det låga berget ser man ladan i <placeName ref="#G">Gerlesborg</placeName>  stabilt placerad 'under' berget. 
+                        Härifrån ser man även en vattenansamling i dalgångens lägsta punkt.
+                    </p>  
+                        <p>Åt nordost reser sig det branta berget och står där som stöd åt platsen och dalgången.</p>
+
+                     <p rendition="#left">52</p>
+               
+
+               
+                    <pb facs="#SIDA_53"/>
+                    <p>Berget skiftar färg och karaktär med väderleken genom de kala och släta granitytorna. Mellan berget och gärdet 
+                        växer enbuskar tätt.
+                    </p> 
+                       <p>Platsen mellan bergen är öppen men ändå rumsbildande. Dalgången gör en avstickare hit – till 
+                            smultronstället med vånga vrår och utblickar.
+                        </p>
+ 
+                            <p>Mellan strandkanten och platsen ligger en liten kulle varifrån man ser öarna i ytterskärgården. 
+                                Under vattenytan har stenarna de mest fantastiska färgnyanser. Beroende på väder och tidpunkt skiftar 
+                                lystern i den gulröda graniten. 
+                            </p>
+                 
+                     <p rendition="#right">53</p>
+            
+
+
+                 
+                    <pb facs="#SIDA_56"/>
+
+
+                    
+                    <pb facs="#SIDA_57"/>
+                   
+                 
+               
+                    <pb facs="#SIDA_70"/>
+                   <head><placeName ref="#MK">Malmö Konsthall</placeName></head>
+
+                 
+                          <p>Vad är det som gör detta märkvärdigt, 'enkla' och självklara så tilltalande? De djärva 'naturliga'
+                              dragen – inga kompromisser (?) eller tvekanden utan bestämda medvetna effekter. Inget plotter. Sidoljus med vacker
+                              utsikt mot parken eller mot ett nära växande träd. Enkla 'nära' material som alltid när Anshelm tar tag.
+                          </p>  
+
+                        <p>Den stora hallen med en takhöjd på ca 3,5 m verkar avlång men inte uttråkande lång utan rejäl o harmonisk. Hur lyckas 
+                            man med belysningen och undertag i ett sådant rum? 
+                        </p>
+
+                        <p>Pyramidkupoler i taket skapar ett mjukt verkande rutnät av vitmålade järnrör – utan kontrasterande skuggor. 
+                            Takhöjden 'förhöjes'
+                            genom den mjuka övergången uppåt i det vackra ljus som pyramiderna sprider. 
+                        </p>
+
+                        <p>Högst sitter två nakna glödlampor som ger ett mycket fint och rogivande ljus även kvällstid utan bländande effekter. 
+                            Men tyvärr räcker inte 
+                            alltid dettal jus utan man måste komplettera med spots här o var, vilka däremot är något bländande.
+                        </p>
+ 
+                 
+                     <p rendition="#left">70</p>
+                
+
+                     <pb facs="#SIDA_71"/>
+                   
+
+                    <p>Trots att Malmö Konsthall är mycket större än Lunds Konsthall är den lätt att orientera sig i. Den stora hallen med
+                         överljus i form av  pyramidkupoler och med högre takhöjd (än mitthallarna) smyger sig runt den höga hallen som
+                          har ett storslaget och intensivare dagsljus. Här får dagsljuset fri framfart utan avskärmning i form av diffuserande 
+                          tyg eller glas. De stora branta lanterninfönster sprider ljuset över vita väggytor. Öppningarna mellan rummen
+                        går nästan till kupolernas kant varför det är lätt att greppa vad som väntar bakom väggen.
+                    </p>  
+
+                    <p>Den glasade fasaden mot Magistratsparken gör passerande nyfikna och ger fin inne - ute kontakt. Men under dagar då
+                        dagsljuset är starkt kan det vara svårt att ge mörka tavlor ett rättvist ljus utan att kontrasterna 
+                        blir för stora. Dessutom växlar ljusets färg o karaktär beroende på årstidern – parkens grönska eller snötäckets vinterljus.
+                    </p>
+
+                    <p>Malmö Konsthall anser jag vara en mera rogivande utställningshall än Lunds – där det händer väldigt mycket på 
+                        en liten yta. Visserligen är rumsdispositionen och de stora volymerna med hög rumshöjd bra men det saknas partier – ytor – som
+                        ger en hänförande upplevelse, där man bara <emph rendition="#italic">är</emph>. Där man inte störs av en trappa, en entré eller någon annan 
+                        arkitektonisk händelse, övermöblering.
+                    </p>
+ 
+                     <p rendition="#right">71</p>
+
+
+                     <pb facs="#SIDA_84"/>
+        
+                    <p>Arbetsmodell</p>  
+                    <p>Utställningshall Gerlesborg</p>  
+ 
+                     <p rendition="#left">84</p>
+
+
+
+
+                     <pb facs="#BAKSIDA"/>
+                     
+ 
+        </body>
+    </text>
+</TEI>
